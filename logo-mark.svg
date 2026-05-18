@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" role="img" aria-label="AgVal">
+  <defs>
+    <linearGradient id="m-green" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#1B4D2E"/>
+      <stop offset="55%" stop-color="#164026"/>
+      <stop offset="100%" stop-color="#0F3320"/>
+    </linearGradient>
+    <linearGradient id="m-gold" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#E5C766"/>
+      <stop offset="45%" stop-color="#D4B23C"/>
+      <stop offset="100%" stop-color="#A8841C"/>
+    </linearGradient>
+    <linearGradient id="m-gold-shine" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%"  stop-color="#C9A227"/>
+      <stop offset="50%" stop-color="#F6ECC8"/>
+      <stop offset="100%" stop-color="#A8841C"/>
+    </linearGradient>
+    <radialGradient id="m-sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#F6ECC8"/>
+      <stop offset="55%"  stop-color="#E5C766"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </radialGradient>
+    <linearGradient id="m-hill-green" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#245C39"/>
+      <stop offset="100%" stop-color="#0F3320"/>
+    </linearGradient>
+    <linearGradient id="m-hill-gold" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#E5C766"/>
+      <stop offset="100%" stop-color="#A8841C"/>
+    </linearGradient>
+  </defs>
+
+  <g font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-weight="800">
+    <text x="80"  y="180" font-size="200" fill="url(#m-green)" letter-spacing="-4">Ag</text>
+    <text x="280" y="180" font-size="200" fill="url(#m-gold)" letter-spacing="-4">Val</text>
+    <text x="280" y="180" font-size="200" fill="url(#m-gold-shine)" letter-spacing="-4" opacity="0.35">Val</text>
+  </g>
+
+  <g transform="translate(80 195)">
+    <circle cx="200" cy="22" r="34" fill="url(#m-sun)"/>
+    <path d="M -10 50 Q 120 0 240 30 Q 360 60 410 30 L 410 80 L -10 80 Z" fill="url(#m-hill-gold)" opacity="0.95"/>
+    <path d="M -10 55 Q 110 15 250 45 Q 350 70 410 50 L 410 90 L -10 90 Z" fill="url(#m-hill-green)"/>
+    <path d="M -10 72 Q 140 40 280 65 Q 360 80 410 70 L 410 105 L -10 105 Z" fill="url(#m-hill-gold)"/>
+    <path d="M -10 92 Q 150 70 290 85 Q 360 95 410 90 L 410 120 L -10 120 Z" fill="url(#m-hill-green)"/>
+    <g transform="translate(320 18)">
+      <g transform="translate(0 0)">
+        <rect x="13" y="48" width="4" height="10" fill="#0F3320"/>
+        <polygon points="15,4 5,28 25,28" fill="url(#m-hill-green)"/>
+        <polygon points="15,16 2,40 28,40" fill="url(#m-hill-green)"/>
+        <polygon points="15,28 0,52 30,52" fill="url(#m-hill-green)"/>
+      </g>
+      <g transform="translate(28 8)">
+        <rect x="11" y="42" width="4" height="9" fill="#0F3320"/>
+        <polygon points="13,6 5,26 21,26" fill="url(#m-hill-green)"/>
+        <polygon points="13,16 3,36 23,36" fill="url(#m-hill-green)"/>
+        <polygon points="13,28 0,46 26,46" fill="url(#m-hill-green)"/>
+      </g>
+    </g>
+  </g>
+</svg>

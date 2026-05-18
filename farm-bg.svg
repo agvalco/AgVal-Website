@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <!-- Sky: warm dawn over forest -->
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"   stop-color="#0F3320"/>
+      <stop offset="35%"  stop-color="#1B4D2E"/>
+      <stop offset="70%"  stop-color="#3E6A47"/>
+      <stop offset="100%" stop-color="#A8841C" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Sun glow -->
+    <radialGradient id="sunglow" cx="0.72" cy="0.36" r="0.45">
+      <stop offset="0%"   stop-color="#F6ECC8" stop-opacity="0.9"/>
+      <stop offset="35%"  stop-color="#E5C766" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#1B4D2E" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sun disc -->
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#FFF6D5"/>
+      <stop offset="55%"  stop-color="#E5C766"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </radialGradient>
+
+    <!-- Distant ridge -->
+    <linearGradient id="ridge" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#0F3320" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0A2418" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Tree line -->
+    <linearGradient id="treeline" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#164026"/>
+      <stop offset="100%" stop-color="#0A2418"/>
+    </linearGradient>
+
+    <!-- Far gold field -->
+    <linearGradient id="goldfield1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#E5C766"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+
+    <!-- Mid green field -->
+    <linearGradient id="greenfield1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#1B4D2E"/>
+    </linearGradient>
+
+    <!-- Near gold field -->
+    <linearGradient id="goldfield2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#D4B23C"/>
+      <stop offset="100%" stop-color="#A8841C"/>
+    </linearGradient>
+
+    <!-- Foreground green field -->
+    <linearGradient id="greenfield2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#245C39"/>
+      <stop offset="100%" stop-color="#0F3320"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="1080" fill="url(#sunglow)"/>
+
+  <!-- Sun -->
+  <circle cx="1380" cy="380" r="95" fill="url(#sun)" opacity="0.92"/>
+
+  <!-- Birds (tiny details) -->
+  <g fill="none" stroke="#0F3320" stroke-width="2" stroke-linecap="round" opacity="0.55">
+    <path d="M 540 250 q 14 -12 28 0 q 14 -12 28 0"/>
+    <path d="M 620 290 q 10 -8 20 0 q 10 -8 20 0"/>
+    <path d="M 700 230 q 12 -10 24 0 q 12 -10 24 0"/>
+  </g>
+
+  <!-- Distant ridge (mountains) -->
+  <path d="M 0 600
+           L 130 540 L 250 570 L 380 510 L 520 560
+           L 660 520 L 810 560 L 960 510 L 1120 555
+           L 1280 520 L 1440 560 L 1600 525 L 1760 565
+           L 1920 535 L 1920 700 L 0 700 Z"
+        fill="url(#ridge)"/>
+
+  <!-- Treeline -->
+  <path d="M 0 660 Q 80 640 160 660 T 320 660 T 480 660 T 640 660 T 800 660
+           T 960 660 T 1120 660 T 1280 660 T 1440 660 T 1600 660 T 1760 660 T 1920 660
+           L 1920 720 L 0 720 Z"
+        fill="url(#treeline)"/>
+
+  <!-- Individual pine trees on treeline silhouette -->
+  <g fill="#0A2418">
+    <g transform="translate(60 590)">
+      <polygon points="20,0 5,40 35,40"/>
+      <polygon points="20,20 0,60 40,60"/>
+      <polygon points="20,40 -5,75 45,75"/>
+      <rect x="18" y="68" width="4" height="14"/>
+    </g>
+    <g transform="translate(180 600)">
+      <polygon points="16,0 4,32 28,32"/>
+      <polygon points="16,18 -2,52 34,52"/>
+      <polygon points="16,38 -8,72 40,72"/>
+      <rect x="14" y="66" width="4" height="12"/>
+    </g>
+    <g transform="translate(1750 595)">
+      <polygon points="18,0 4,36 32,36"/>
+      <polygon points="18,20 -2,58 38,58"/>
+      <polygon points="18,42 -8,78 44,78"/>
+      <rect x="16" y="72" width="4" height="14"/>
+    </g>
+    <g transform="translate(1840 615)">
+      <polygon points="14,0 2,28 26,28"/>
+      <polygon points="14,16 -4,46 32,46"/>
+      <polygon points="14,34 -10,66 38,66"/>
+      <rect x="12" y="60" width="4" height="12"/>
+    </g>
+  </g>
+
+  <!-- Far gold field -->
+  <path d="M 0 720
+           Q 320 690 640 710 Q 960 680 1280 710 Q 1600 690 1920 710
+           L 1920 800 L 0 800 Z"
+        fill="url(#goldfield1)"/>
+
+  <!-- Silo + barn cluster on far field -->
+  <g transform="translate(380 660)">
+    <!-- silo 1 -->
+    <rect x="0"  y="0"  width="20" height="58" fill="#FAF7F0" opacity="0.9"/>
+    <ellipse cx="10" cy="0" rx="10" ry="4" fill="#E5C766"/>
+    <!-- silo 2 -->
+    <rect x="26" y="-6" width="24" height="64" fill="#FAF7F0" opacity="0.95"/>
+    <ellipse cx="38" cy="-6" rx="12" ry="5" fill="#E5C766"/>
+    <!-- barn -->
+    <g transform="translate(70 18)">
+      <polygon points="0,18 38,0 76,18 76,52 0,52" fill="#A8841C"/>
+      <polygon points="0,18 38,0 76,18 76,22 0,22" fill="#8B6914"/>
+      <rect x="30" y="32" width="16" height="20" fill="#0F3320"/>
+      <line x1="38" y1="18" x2="38" y2="52" stroke="#0F3320" stroke-width="0.8"/>
+    </g>
+  </g>
+
+  <!-- Mid green field -->
+  <path d="M 0 770
+           Q 320 740 640 765 Q 960 735 1280 765 Q 1600 740 1920 765
+           L 1920 860 L 0 860 Z"
+        fill="url(#greenfield1)"/>
+
+  <!-- Field rows on green -->
+  <g stroke="#0F3320" stroke-width="1" opacity="0.4" fill="none">
+    <path d="M 0 800 Q 320 778 640 798 Q 960 770 1280 800 Q 1600 778 1920 798"/>
+    <path d="M 0 820 Q 320 798 640 818 Q 960 792 1280 820 Q 1600 798 1920 818"/>
+    <path d="M 0 840 Q 320 820 640 838 Q 960 812 1280 840 Q 1600 820 1920 838"/>
+  </g>
+
+  <!-- Near gold field -->
+  <path d="M 0 850
+           Q 320 820 640 845 Q 960 815 1280 845 Q 1600 820 1920 845
+           L 1920 940 L 0 940 Z"
+        fill="url(#goldfield2)"/>
+
+  <!-- Wheat-stalk texture lines on gold field -->
+  <g stroke="#8B6914" stroke-width="1" opacity="0.45" fill="none">
+    <path d="M 0 880 Q 320 855 640 875 Q 960 850 1280 875 Q 1600 855 1920 875"/>
+    <path d="M 0 900 Q 320 875 640 895 Q 960 870 1280 895 Q 1600 875 1920 895"/>
+    <path d="M 0 920 Q 320 895 640 915 Q 960 890 1280 915 Q 1600 895 1920 915"/>
+  </g>
+
+  <!-- Foreground green field -->
+  <path d="M 0 920
+           Q 320 895 640 915 Q 960 885 1280 915 Q 1600 895 1920 920
+           L 1920 1080 L 0 1080 Z"
+        fill="url(#greenfield2)"/>
+
+  <!-- Deep furrows on foreground -->
+  <g stroke="#0F3320" stroke-width="1.4" opacity="0.5" fill="none">
+    <path d="M 0 960  Q 320 935 640 955  Q 960 925 1280 955  Q 1600 935 1920 955"/>
+    <path d="M 0 990  Q 320 965 640 985  Q 960 955 1280 985  Q 1600 965 1920 985"/>
+    <path d="M 0 1020 Q 320 995 640 1015 Q 960 985 1280 1015 Q 1600 995 1920 1015"/>
+    <path d="M 0 1050 Q 320 1025 640 1045 Q 960 1015 1280 1045 Q 1600 1025 1920 1045"/>
+  </g>
+
+  <!-- Vignette for readability -->
+  <radialGradient id="vignette" cx="0.5" cy="0.5" r="0.75">
+    <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+</svg>
