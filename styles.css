@@ -155,7 +155,7 @@ section { padding: clamp(3.5rem, 7vw, 6.5rem) 0; }
   backdrop-filter: saturate(150%) blur(10px);
   -webkit-backdrop-filter: saturate(150%) blur(10px);
   border-bottom: 1px solid var(--hairline);
-  overflow: hidden; /* clip the overflowing PNG whitespace so it doesn't bleed onto hero */
+  /* NOTE: do not set overflow: hidden here — it would clip the mobile dropdown menu */
 }
 .nav {
   display: flex;
@@ -169,6 +169,7 @@ section { padding: clamp(3.5rem, 7vw, 6.5rem) 0; }
   display: flex;
   align-items: center;
   text-decoration: none;
+  overflow: hidden;  /* clip the logo's PNG whitespace overflow without clipping the mobile menu */
 }
 .brand-logo {
   height: 200px;
