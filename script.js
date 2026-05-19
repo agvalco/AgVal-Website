@@ -60,37 +60,14 @@
   }
 
   // ---------- Contact form ----------
-  const form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(form).entries());
-
-      // Build a mailto fallback so the message can be delivered without backend setup.
-      const subject = encodeURIComponent(`AgVal Quote Request — ${data.name || 'New inquiry'}`);
-      const bodyLines = [
-        `Name: ${data.name || ''}`,
-        `Email: ${data.email || ''}`,
-        `Phone: ${data.phone || ''}`,
-        `Service Type: ${data.service || ''}`,
-        `Property Address / County: ${data.property || ''}`,
-        `Intended Use: ${data.purpose || ''}`,
-        '',
-        'Message:',
-        data.message || ''
-      ];
-      const body = encodeURIComponent(bodyLines.join('\n'));
-      const mailto = `mailto:agvalco@gmail.com?subject=${subject}&body=${body}`;
-
-      // Show success message, then trigger the user's mail client
-      const success = document.querySelector('.form-success');
-      if (success) {
-        success.classList.add('show');
-        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-      window.location.href = mailto;
-      form.reset();
-    });
+  // The form posts directly to Formsubmit.co, which forwards to agvalco@gmail.com.
+  // After submission Formsubmit redirects back to ?sent=1 — show the success banner then.
+  if (window.location.search.includes('sent=1')) {
+    const success = document.querySelector('.form-success');
+    if (success) {
+      success.classList.add('show');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
   }
 
   // ---------- Set current year in footer ----------

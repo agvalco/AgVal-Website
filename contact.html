@@ -112,11 +112,19 @@
             <p class="form-intro">A few details help us get back to you with a meaningful response. All fields marked <span class="req">*</span> are required.</p>
 
             <div class="form-success" role="status" aria-live="polite">
-              <strong>Thanks — your message is ready to send.</strong>
-              Your email client should open with your inquiry pre-filled. If it doesn't, please email us directly at <a href="mailto:agvalco@gmail.com">agvalco@gmail.com</a>.
+              <strong>Thanks — your request has been sent.</strong>
+              We've received your inquiry and will respond within one business day. If you don't hear back, please email us directly at <a href="mailto:agvalco@gmail.com">agvalco@gmail.com</a>.
             </div>
 
-            <form id="contact-form" novalidate>
+            <form id="contact-form" action="https://formsubmit.co/agvalco@gmail.com" method="POST">
+              <!-- Formsubmit configuration (hidden) -->
+              <input type="hidden" name="_subject" value="AgVal Quote Request — New Inquiry" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="true" />
+              <input type="hidden" name="_next" value="https://agvalco.com/contact.html?sent=1" />
+              <input type="hidden" name="_autoresponse" value="Thank you for reaching out to AgVal. We received your request and will respond within one business day. — Brian Griffin, AgVal Appraisal & Real Estate Solutions" />
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
               <div class="form-row">
                 <div class="form-field">
                   <label for="name">Name <span class="req">*</span></label>
