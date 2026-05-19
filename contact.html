@@ -116,14 +116,12 @@
               We've received your inquiry and will respond within one business day. If you don't hear back, please email us directly at <a href="mailto:agvalco@gmail.com">agvalco@gmail.com</a>.
             </div>
 
-            <form id="contact-form" action="https://formsubmit.co/agvalco@gmail.com" method="POST">
-              <!-- Formsubmit configuration (hidden) -->
+            <form id="contact-form" action="https://formspree.io/f/xredbaag" method="POST">
+              <!-- Formspree configuration (hidden) -->
               <input type="hidden" name="_subject" value="AgVal Quote Request — New Inquiry" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="true" />
               <input type="hidden" name="_next" value="https://agvalco.com/contact.html?sent=1" />
-              <input type="hidden" name="_autoresponse" value="Thank you for reaching out to AgVal. We received your request and will respond within one business day. — Brian Griffin, AgVal Appraisal & Real Estate Solutions" />
-              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+              <!-- Honeypot: bots fill this in, real users don't see it; submissions with it filled are silently dropped -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
               <div class="form-row">
                 <div class="form-field">
