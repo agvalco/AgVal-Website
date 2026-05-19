@@ -185,6 +185,8 @@ section { padding: clamp(3.5rem, 7vw, 6.5rem) 0; }
   background: var(--forest-500);   /* tight forest-green pill behind the logo */
   border-radius: 10px;
   padding: 6px 10px;                /* tight — no overflow into surrounding text */
+  box-sizing: content-box;          /* keep `height` as the image height; padding sits outside */
+  margin: 0;                        /* reset header logo's negative margin */
   box-shadow: none;                 /* no shadow bleeding onto adjacent words */
   mix-blend-mode: normal;
 }
