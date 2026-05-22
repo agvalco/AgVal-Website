@@ -489,6 +489,66 @@ section { padding: clamp(3.5rem, 7vw, 6.5rem) 0; }
 .audience-card h4 { color: var(--forest-900); margin-bottom: 0.25rem; }
 .audience-card p { font-size: 0.88rem; margin-bottom: 0; color: var(--muted); }
 
+/* ---------- Reviews ---------- */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.review-card {
+  background: var(--cream);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition);
+}
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold-300);
+}
+.review-stars {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+.review-stars svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--gold-600);
+}
+.review-quote {
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  line-height: 1.55;
+  color: var(--forest-900);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+.review-author {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--hairline);
+}
+.review-name {
+  font-weight: 700;
+  color: var(--forest-700);
+}
+.review-role {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+/* Leave-a-review form (contact page) */
+.review-submit-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
 /* ---------- About sections ---------- */
 .split {
   display: grid;

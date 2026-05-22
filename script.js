@@ -70,6 +70,16 @@
     }
   }
 
+  // ---------- Review form ----------
+  // Posts to Formspree and redirects back to ?review=1 — show its success banner then.
+  if (window.location.search.includes('review=1')) {
+    const reviewSuccess = document.querySelector('#review-success');
+    if (reviewSuccess) {
+      reviewSuccess.classList.add('show');
+      reviewSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
   // ---------- Set current year in footer ----------
   const yearEl = document.querySelector('[data-year]');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

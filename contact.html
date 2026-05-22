@@ -187,6 +187,80 @@
       </div>
     </section>
 
+    <!-- ============== LEAVE A REVIEW ============== -->
+    <section class="review-submit" style="background: var(--paper); border-top: 1px solid var(--hairline);">
+      <div class="container">
+        <div class="review-submit-inner">
+          <div class="section-head reveal" style="margin-bottom: 2rem;">
+            <span class="eyebrow">Leave a Review</span>
+            <h2>Worked with AgVal? We'd love your feedback.</h2>
+            <p>Your review comes straight to us privately. With your permission, we may feature it on our site — we'll never publish anything without checking with you first.</p>
+          </div>
+
+          <div class="contact-form reveal">
+            <div class="form-success" id="review-success" role="status" aria-live="polite">
+              <strong>Thank you for your review!</strong>
+              We've received your feedback and truly appreciate you taking the time. If we'd like to feature it, we'll reach out first.
+            </div>
+
+            <form id="review-form" action="https://formspree.io/f/xredbaag" method="POST">
+              <input type="hidden" name="_subject" value="AgVal Website — New Review Submission" />
+              <input type="hidden" name="_next" value="https://agvalco.com/contact.html?review=1" />
+              <input type="hidden" name="form_type" value="Customer Review" />
+              <!-- Honeypot: bots fill this in, real users don't see it -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="review-name">Name <span class="req">*</span></label>
+                  <input type="text" id="review-name" name="name" required autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label for="review-role">Title / Location</label>
+                  <input type="text" id="review-role" name="role" placeholder="e.g., Landowner, Hamilton County" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="review-email">Email <span class="req">*</span></label>
+                <input type="email" id="review-email" name="email" required autocomplete="email" />
+              </div>
+
+              <div class="form-field">
+                <label for="review-rating">Rating <span class="req">*</span></label>
+                <select id="review-rating" name="rating" required>
+                  <option value="">— Select a rating —</option>
+                  <option value="5 stars">★★★★★ — Excellent</option>
+                  <option value="4 stars">★★★★ — Very good</option>
+                  <option value="3 stars">★★★ — Good</option>
+                  <option value="2 stars">★★ — Fair</option>
+                  <option value="1 star">★ — Poor</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="review-text">Your Review <span class="req">*</span></label>
+                <textarea id="review-text" name="review" required placeholder="Tell us about your experience working with AgVal..."></textarea>
+              </div>
+
+              <div class="form-field">
+                <label for="review-permission">May we feature your review?</label>
+                <select id="review-permission" name="permission_to_publish">
+                  <option value="Yes — you may use my first name and location">Yes — you may use my first name and location</option>
+                  <option value="Yes — but keep me anonymous">Yes — but keep me anonymous</option>
+                  <option value="No — private feedback only">No — private feedback only</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">Submit My Review</button>
+
+              <p class="form-note">Your review is sent privately to AgVal. We never share your details with third parties.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
